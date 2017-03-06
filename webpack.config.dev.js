@@ -1,8 +1,11 @@
 module.exports = {
     entry: './src/index.tsx',
     output: {
-        filename: './dist/bundle.js'
+        filename: './dev/bundle.js'
     },
+
+    // Endable sourcemaps for debugging webpack's output.
+    devtool: 'source-map',
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
